@@ -36,7 +36,7 @@ public class ScheduledTasks {
     private static final Logger logger = LoggerFactory.getLogger(ScheduledTasks.class);
 
     //每隔1 day执行一次
-    //@Scheduled(fixedRate = 60000*60*24)
+    @Scheduled(fixedRate = 60000*60*24)
     public void reportCurrentTime() {
         try{
 
