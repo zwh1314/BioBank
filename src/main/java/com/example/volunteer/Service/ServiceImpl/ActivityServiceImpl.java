@@ -43,18 +43,18 @@ public class ActivityServiceImpl implements ActivityService {
         Response<Boolean> response = new Response<>();
 
         activity.setActivityOrganizer(userId);
-        int activityId = activityDao.insertActivity(activity);
-        if (activityId <= 0) {
+        int result = activityDao.insertActivity(activity);
+        if (result <= 0) {
             logger.error("[addActivity Fail], activity: {}", SerialUtil.toJsonStr(activity));
             response.setFail(ResponseEnum.OPERATE_DATABASE_FAIL);
             return response;
         }
 
-        if(!addActivitySignFileModel(activityId,signFileModel)){
+        if(!addActivitySignFileModel(activity.getActivityId(),signFileModel)){
             response.setFail(ResponseEnum.UPLOAD_OSS_FAILURE);
             return response;
         }
-        if(!addActivityPicture(activityId,activityPicture)){
+        if(!addActivityPicture(activity.getActivityId(),activityPicture)){
             response.setFail(ResponseEnum.UPLOAD_OSS_FAILURE);
             return response;
         }

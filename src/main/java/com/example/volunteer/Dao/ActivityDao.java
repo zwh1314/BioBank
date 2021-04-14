@@ -9,7 +9,8 @@ import java.util.List;
 
 @Mapper
 public  interface ActivityDao {
-    @Insert("INSERT INTO activity(activity_name,activity_content,activity_organizer,activity_type,activity_date,is_signfile_model,enrolled_number,requested_number,activity_place,is_activity_picture) VALUES (#{activityName},#{activityContent},#{activityOrganizer},#{activityType},NOW(),#{isSignFileModel},#{enrolledNumber},#{requestedNumber},#{activityPlace},#{isActivityPicture});")
+    @Insert("INSERT INTO activity(activity_name,activity_content,activity_organizer,activity_type,activity_date,is_signfile_model,enrolled_number,requested_number,activity_place,is_activity_picture) VALUES (#{activityName},#{activityContent},#{activityOrganizer},#{activityType},#{activityDate},#{isSignFileModel},#{enrolledNumber},#{requestedNumber},#{activityPlace},#{isActivityPicture});")
+    @Options(useGeneratedKeys = true, keyProperty = "activityId", keyColumn = "activity_id")
     int insertActivity(Activity activity);
 
     @ResultType(ActivityDTO.class)

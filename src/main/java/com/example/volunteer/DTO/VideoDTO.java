@@ -32,7 +32,7 @@ public class VideoDTO {
     private long videoLike;
 
     @ApiModelProperty(value = "视频发布者")
-    private long videoPublisher;
+    private UserInfoDTO videoPublisher;
 
     @ApiModelProperty(value = "视频发布时间")
     private Date videoDate;

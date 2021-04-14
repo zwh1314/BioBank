@@ -187,7 +187,7 @@ public class VideoServiceImpl implements VideoService {
         videoDTO.setVideoText(video.getVideoText());
         videoDTO.setVideoTitle(video.getVideoTitle());
         videoDTO.setVideoPlayNum(video.getVideoPlayNum());
-        videoDTO.setVideoPublisher(video.getVideoPublisher());
+        videoDTO.setVideoPublisher(userInfoDao.getUserInfoByUserId(video.getVideoPublisher()));
 
         List<VideoComment> videoCommentList = videoCommentDao.findCommentByVideoId(video.getVideoId());
         List<VideoCommentDTO> videoCommentDTOList = new ArrayList<>();
