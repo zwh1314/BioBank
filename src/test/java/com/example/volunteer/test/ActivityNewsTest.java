@@ -25,15 +25,15 @@ public class ActivityNewsTest {
         List<ActivityNews> activityNewsList=new ArrayList<>();
         ActivityNews activityNews=new ActivityNews();
         activityNews.setActivityId(1);
-        activityNews.setNewsContent("张文瀚测试1");
-        activityNews.setNewsTitle("张文瀚测试");
+        activityNews.setNewsContent("测试1");
+        activityNews.setNewsTitle("测试");
         //activityNews.setNewsPicture("http:\\127.0.0.1:8080\\test");
         activityNews.setNewsPublisher(1L);
         activityNewsList.add(activityNews);
         ActivityNews activityNews1=new ActivityNews();
         activityNews1.setActivityId(1);
-        activityNews1.setNewsContent("张文瀚测试2");
-        activityNews1.setNewsTitle("张文瀚测试");
+        activityNews1.setNewsContent("测试2");
+        activityNews1.setNewsTitle("测试");
         //activityNews1.setNewsPicture("http:\\127.0.0.1:8080\\test");
         activityNews1.setNewsPublisher(2L);
         activityNewsList.add(activityNews1);
@@ -43,11 +43,11 @@ public class ActivityNewsTest {
         System.out.println(activityNewsService.getActivityNewsByActivityId(1));
         System.out.println(activityNewsService.getActivityNewsByPublisherId(1));
         System.out.println(activityNewsService.getActivityNewsInOneWeek());
-        System.out.println(activityNewsService.getActivityNewsByRelativeText("张文瀚"));
+        System.out.println(activityNewsService.getActivityNewsByRelativeText(""));
 
         //activityNewsService.updateActivityNewsContent("猪猪侠",1);
         //activityNewsService.updateActivityNewsPicture("http:\\127.0.0.1:8080\\test1",1);
-        activityNewsService.updateActivityNewsTitle("张文瀚更新测试",1);
+        activityNewsService.updateActivityNewsTitle("更新测试",1);
 
         activityNewsService.deleteActivityNewsById(1L);
     }

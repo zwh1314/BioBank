@@ -117,10 +117,10 @@ public class VideoCommentController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "commentId", value = "评论id", paramType = "query", dataType = "long"),
     })
-    public Response<Boolean>updateVideoCommentLikeNumber(@RequestParam("likeNumber")long likeNumber,@RequestParam("commentId") long commentId) {
+    public Response<Boolean>updateVideoCommentLikeNumber(@RequestParam("commentId") long commentId) {
         Response<Boolean> response = new Response<>();
         try {
-            return videoCommentService.updateVideoCommentLikeNumber(likeNumber, commentId);
+            return videoCommentService.updateVideoCommentLikeNumber(commentId);
         } catch (IllegalArgumentException e) {
             logger.warn("[updateVideoCommentLikeNumber Illegal Argument], : commentId {}", commentId, e);
             response.setFail(ResponseEnum.ILLEGAL_PARAM);

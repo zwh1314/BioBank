@@ -34,7 +34,7 @@ public class ActivityTest {
         Date date = dateformat.parse("2020-12-25 00:00:00");
         activity1.setActivityDate(date);
         activityDao.insertActivity(activity1);
-        ActivityDTO activityDTO=activityDao.getActivityByActivityId(activity1.getActivityId());
+        Activity activity=activityDao.getActivityByActivityId(activity1.getActivityId());
         System.out.println(activityDao.getActivityByActivityId(activity1.getActivityId()));
 
 

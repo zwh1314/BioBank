@@ -10,7 +10,7 @@ import java.util.List;
 public interface VideoCommentService {
     Response<Boolean> addVideoComment(VideoCommentRequest videoCommentRequest);
 
-    Response<Boolean> updateVideoCommentLikeNumber(long videoCommentLikeNumber, long commentId);
+    Response<Boolean> updateVideoCommentLikeNumber(long commentId);
 
     Response<Boolean> updateVideoCommentText(String VideoCommentText, long commentId);
 

@@ -30,6 +30,9 @@ public enum ResponseEnum {
     UPLOAD_OSS_FAILURE(119,"文件上传OSS失败"),
     SIGNED_ACTIVITY_NOT_FOUND(120,"未找到已报名活动"),
     NO_ACTIVITY_FOCUS(121,"无关注活动"),
+    INSUFFICIENT_CREDIT(122,"积分不足"),
+    NUM_NOT_ENOUGH(123,"库存不足"),
+    OBJECT_NOT_FOUND(124,"商品不存在"),
 
     PURCHASE_ORDER_NOT_FOUND(301, "未找到对应的采购计划"),
 

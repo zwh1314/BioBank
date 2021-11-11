@@ -45,7 +45,7 @@ public class Activity implements Serializable {
 
     @Column(name = "activity_date",nullable = false)
     @ApiModelProperty(value = "活动时间")
-    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date activityDate;
 
     @Column(name = "activity_place",nullable = false)

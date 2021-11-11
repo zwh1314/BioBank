@@ -38,9 +38,10 @@ public class VideoCommentServiceImpl implements VideoCommentService {
     }
 
     @Override
-    public Response<Boolean> updateVideoCommentLikeNumber(long commentLikeNumber, long commentId){
+    public Response<Boolean> updateVideoCommentLikeNumber(long commentId){
         Response<Boolean> response=new Response<>();
-
+        long commentLikeNumber = videoCommentDao.getCommentLikeByCommentId(commentId);
+        commentLikeNumber += 1;
         boolean result = videoCommentDao.updateCommentLike(commentLikeNumber, commentId) > 0;
         if (!result) {
             logger.error("[updateCommentLike Fail], commentId: {}", SerialUtil.toJsonStr(commentId));

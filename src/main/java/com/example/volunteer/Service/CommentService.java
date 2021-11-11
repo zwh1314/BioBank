@@ -9,7 +9,7 @@ import java.util.List;
 public interface CommentService {
     Response<Boolean> addComment(long userId, String commentText, MultipartFile[] commentPicture);
 
-    Response<Boolean> updateCommentLikeNumber(long commentLikeNumber, long commentId);
+    Response<Boolean> updateCommentLikeNumber(long commentId);
 
     Response<Boolean> updateCommentText(String commentText, long commentId);
 

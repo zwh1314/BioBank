@@ -136,4 +136,22 @@ public class UserInfoServiceImpl implements UserInfoService {
         }
         return response;
     }
+    @Override
+    public Response<Boolean>addUserCredit(long userId) {
+        Response<Boolean> response=new Response<>();
+        UserInfoDTO userInfoDTO =  userInfoDao.getCreditsById(userId);
+
+        if(null == userInfoDTO){
+            logger.error("[getUserNameByUserId Fail], request:{}",SerialUtil.toJsonStr(userId));
+            response.setFail(ResponseEnum.USERINFO_NOT_FOUND);
+        }
+        else {
+            long credit = userInfoDTO.getCredits();
+            credit += 1;
+            int result = userInfoDao.updateCredits(userId,credit);
+            if(result > 0)response.setSuc(true);
+            else response.setFail(ResponseEnum.OPERATE_DATABASE_FAIL);
+        }
+        return response;
+    }
 }

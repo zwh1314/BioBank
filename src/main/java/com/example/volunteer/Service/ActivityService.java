@@ -32,6 +32,9 @@ public interface ActivityService {
      */
     public Response<ActivityDTO> getActivityByActivityId(long activityId);
 
+
+    public Response<List<ActivityDTO>> getActivityByActivityName(String activityName);
+
     /**
      * 通过organizerId查询活动
      * @param organizerId

@@ -61,53 +61,31 @@ public class ActivityController extends BaseController{
     @PostMapping("/addActivity")
     @ApiOperation("添加活动")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "activityName", value = "活动名称", paramType = "query", dataType = "String"),
-            @ApiImplicitParam(name = "activityType", value = "活动类型", paramType = "query", dataType = "String"),
-            @ApiImplicitParam(name = "activityDate", value = "活动时间", paramType = "query", dataType = "Date"),
-            @ApiImplicitParam(name = "requestedNumber", value = "活动需要人数", paramType = "query", dataType = "int"),
-            @ApiImplicitParam(name = "activityPlace", value = "活动地点", paramType = "query", dataType = "String"),
-            @ApiImplicitParam(name = "activityContent", value = "活动内容", paramType = "query", dataType = "String"),
+            @ApiImplicitParam(name = "activity", value = "活动主体", paramType = "query", dataType = "Activity"),
             @ApiImplicitParam(name = "signFileModel", value = "报名表模板", paramType = "query", dataType = "MultipartFile[]"),
             @ApiImplicitParam(name = "activityPicture", value = "活动图片", paramType = "query", dataType = "MultipartFile[]"),
     })
-    public Response<Boolean> addActivity(@RequestParam(value = "activityName",required = false) String activityName,
-                                         @RequestParam(value = "activityType",required = false) String activityType,
-                                         @RequestParam(value = "activityDate",required = false) Date activityDate,
-                                         @RequestParam(value = "requestedNumber",required = false) int requestedNumber,
-                                         @RequestParam(value = "activityPlace",required = false) String activityPlace,
-                                         @RequestParam(value = "activityContent",required = false) String activityContent,
-                                         @RequestParam(value = "signFileModel",required = false) MultipartFile[] signFileModel,
-                                         @RequestParam(value = "activityPicture",required = false) MultipartFile[] activityPicture) {
+    public Response<Boolean> addActivity(Activity activity,
+                                         @RequestParam(value = "uploadSignFileModel", required = false) MultipartFile[] uploadSignFileModel,
+                                         @RequestParam(value = "uploadActivityPicture", required = false) MultipartFile[] uploadActivityPicture) {
         Response<Boolean> response = new Response<>();
         long userId =getUserId();
         try {
-            Activity activity = new Activity();
-            activity.setActivityName(activityName);
-            activity.setActivityType(activityType);
-            activity.setActivityDate(activityDate);
-            activity.setRequestedNumber(requestedNumber);
-            activity.setEnrolledNumber(0);
-            activity.setActivityPlace(activityPlace);
-            activity.setActivityContent(activityContent);
-            if(signFileModel==null) {
-                signFileModel = new MultipartFile[0];
-                activity.setSignFileModel(false);
-            }
-            if(activityPicture==null) {
-                activityPicture = new MultipartFile[0];
-                activity.setActivityPicture(false);
-            }
-            return activityService.addActivity(userId,activity,signFileModel,activityPicture);
+            if(uploadSignFileModel==null)
+                uploadSignFileModel = new MultipartFile[0];
+            if(uploadActivityPicture==null)
+                uploadActivityPicture = new MultipartFile[0];
+            return activityService.addActivity(userId,activity,uploadSignFileModel,uploadActivityPicture);
         } catch (IllegalArgumentException e) {
-            logger.warn("[addActivity Illegal Argument], signFileModel: {}, activityPicture: {}", SerialUtil.toJsonStr(signFileModel), SerialUtil.toJsonStr(activityPicture), e);
+            logger.warn("[addActivity Illegal Argument], activity: {}", SerialUtil.toJsonStr(activity), e);
             response.setFail(ResponseEnum.ILLEGAL_PARAM);
             return response;
         } catch (VolunteerRuntimeException e) {
-            logger.warn("[addActivity Illegal Argument], signFileModel: {}, activityPicture: {}", SerialUtil.toJsonStr(signFileModel), SerialUtil.toJsonStr(activityPicture), e);
+            logger.error("[addActivity Runtime Exception], activity: {}", SerialUtil.toJsonStr(activity), e);
             response.setFail(e.getExceptionCode(), e.getMessage());
             return response;
         }  catch (Exception e) {
-            logger.warn("[addActivity Illegal Argument], signFileModel: {}, activityPicture: {}", SerialUtil.toJsonStr(signFileModel), SerialUtil.toJsonStr(activityPicture), e);
+            logger.error("[addActivity Exception], activity: {}", SerialUtil.toJsonStr(activity), e);
             response.setFail(ResponseEnum.SERVER_ERROR);
             return response;
         }
@@ -195,6 +173,26 @@ public class ActivityController extends BaseController{
             return response;
         }  catch (Exception e) {
             logger.error("[getActivityByNumber Exception], number: {}", number, e);
+            response.setFail(ResponseEnum.SERVER_ERROR);
+            return response;
+        }
+    }
+    @PostMapping("/getActivityByActivityName")
+    @ApiOperation("获得活动 by活动名字")
+    public Response<List<ActivityDTO>> getActivityByActivityName(@RequestParam("activityName") String activityName) {
+        Response<List<ActivityDTO>> response = new Response<>();
+        try {
+            return activityService.getActivityByActivityName(activityName);
+        } catch (IllegalArgumentException e) {
+            logger.warn("[getActivityByActivityName Illegal Argument], activityName: {}", activityName, e);
+            response.setFail(ResponseEnum.ILLEGAL_PARAM);
+            return response;
+        } catch (VolunteerRuntimeException e) {
+            logger.error("[getActivityByActivityName Runtime Exception], activityName: {}", activityName, e);
+            response.setFail(e.getExceptionCode(), e.getMessage());
+            return response;
+        }  catch (Exception e) {
+            logger.error("[getActivityByActivityName Exception], activityName: {}", activityName, e);
             response.setFail(ResponseEnum.SERVER_ERROR);
             return response;
         }

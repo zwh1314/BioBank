@@ -134,10 +134,10 @@ public class CommentController extends BaseController{
         @ApiImplicitParams({
                 @ApiImplicitParam(name = "commentId", value = "评论id", paramType = "query", dataType = "long"),
         })
-        public Response<Boolean> updateCommentLikeNumber(@RequestParam("commentLikeNumber")long commentLikeNumber,@RequestParam("commentId") long commentId) {
+        public Response<Boolean> updateCommentLikeNumber(@RequestParam("commentId") long commentId) {
             Response<Boolean> response = new Response<>();
             try {
-                return commentService.updateCommentLikeNumber(commentLikeNumber,commentId);
+                return commentService.updateCommentLikeNumber(commentId);
             } catch (IllegalArgumentException e) {
                 logger.warn("[updateCommentLikeNumber Illegal Argument], : commentId {}", commentId, e);
                 response.setFail(ResponseEnum.ILLEGAL_PARAM);

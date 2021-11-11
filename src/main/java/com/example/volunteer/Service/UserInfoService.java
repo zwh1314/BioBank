@@ -21,4 +21,8 @@ public interface UserInfoService {
 
     Response<String> getUserNameByUserId(long userId);
 
+    Response<Boolean>addUserCredit(long userId);
+
+
+
 }

@@ -27,10 +27,10 @@ public interface UserInfoDao {
     int updateUserInfo(UserInfo userInfo);
 
     @Update("UPDATE user_info SET credits = #{credits} WHERE user_id = #{userId}")
-    int updateCredits(@Param("userId") String userId, @Param("credits") int credits);
+    int updateCredits(@Param("userId") long userId, @Param("credits") long credits);
 
     @Update("UPDATE user_info SET priority = #{priority} WHERE user_id = #{userId}")
-    int updatePriority(@Param("userId") String userId, @Param("priority") String priority);
+    int updatePriority(@Param("userId") long userId, @Param("priority") String priority);
 
     @Update("UPDATE user_info SET head_picture = #{headPicture} WHERE user_id = #{userId}")
     int updateHeadPicture(@Param("userId") long userId, @Param("headPicture") String headPicture);

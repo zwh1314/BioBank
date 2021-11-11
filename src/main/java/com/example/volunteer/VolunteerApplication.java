@@ -13,7 +13,6 @@ import javax.servlet.MultipartConfigElement;
 @EnableScheduling
 @SpringBootApplication
 public class VolunteerApplication {
-
 	@Bean
 	public MultipartConfigElement multipartConfigElement(@Value("${spring.servlet.multipart.max-file-size}")String maxFileSize, @Value("${spring.servlet.multipart.max-request-size}") String maxRequestSize) {
 		MultipartConfigFactory factory = new MultipartConfigFactory();
