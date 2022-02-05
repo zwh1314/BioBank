@@ -1,0 +1,87 @@
+2022-01-10 15:12:36.126 == vol == [ main ] - [ INFO  ] [ com.example.biologyModel.test.RedisTest : 55 ] - Starting RedisTest using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 19908 (started by ZWH in C:\Users\ZWH\Desktop\volunteer)
+2022-01-10 15:12:36.127 == vol == [ main ] - [ DEBUG ] [ com.example.biologyModel.test.RedisTest : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-01-10 15:12:36.127 == vol == [ main ] - [ INFO  ] [ com.example.biologyModel.test.RedisTest : 664 ] - The following profiles are active: dev
+2022-01-10 15:12:38.730 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-10 15:12:38.825 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-01-10 15:12:39.055 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-10 15:12:39.640 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-01-10 15:12:40.291 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-01-10 15:12:40.361 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-01-10 15:12:42.152 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-10 15:12:42.196 == vol == [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-01-10 15:12:43.345 == vol == [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-01-10 15:12:43.380 == vol == [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-01-10 15:12:43.420 == vol == [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-01-10 15:12:43.692 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
+2022-01-10 15:12:43.724 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
+2022-01-10 15:12:43.727 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
+2022-01-10 15:12:43.742 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
+2022-01-10 15:12:43.763 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_1
+2022-01-10 15:12:43.767 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addSwiperUsingPOST_1
+2022-01-10 15:12:43.769 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteSwiperByIdUsingPOST_1
+2022-01-10 15:12:43.775 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByNumberUsingGET_1
+2022-01-10 15:12:43.776 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByPriorityUsingGET_1
+2022-01-10 15:12:43.778 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_2
+2022-01-10 15:12:43.780 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateSwiperTextUsingPOST_1
+2022-01-10 15:12:43.837 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_2
+2022-01-10 15:12:43.883 == vol == [ main ] - [ INFO  ] [ com.example.biologyModel.test.RedisTest : 61 ] - Started RedisTest in 8.14 seconds (JVM running for 9.927)
+2022-01-10 15:12:45.010 == vol == [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2022-01-10 15:12:45.024 == vol == [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2022-01-10 15:25:50.307 == vol == [ main ] - [ INFO  ] [ com.example.biologyModel.test.RedisTest : 55 ] - Starting RedisTest using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 15984 (started by ZWH in C:\Users\ZWH\Desktop\volunteer)
+2022-01-10 15:25:50.309 == vol == [ main ] - [ DEBUG ] [ com.example.biologyModel.test.RedisTest : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-01-10 15:25:50.337 == vol == [ main ] - [ INFO  ] [ com.example.biologyModel.test.RedisTest : 664 ] - The following profiles are active: dev
+2022-01-10 15:25:52.865 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-10 15:25:52.942 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-01-10 15:25:53.120 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-10 15:25:53.539 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-01-10 15:25:53.821 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-01-10 15:25:53.879 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-01-10 15:25:55.475 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-10 15:25:55.633 == vol == [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-01-10 15:25:56.938 == vol == [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-01-10 15:25:56.977 == vol == [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-01-10 15:25:57.016 == vol == [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-01-10 15:25:57.303 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
+2022-01-10 15:25:57.332 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
+2022-01-10 15:25:57.334 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
+2022-01-10 15:25:57.350 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
+2022-01-10 15:25:57.373 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_1
+2022-01-10 15:25:57.379 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addSwiperUsingPOST_1
+2022-01-10 15:25:57.381 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteSwiperByIdUsingPOST_1
+2022-01-10 15:25:57.388 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByNumberUsingGET_1
+2022-01-10 15:25:57.390 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByPriorityUsingGET_1
+2022-01-10 15:25:57.393 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_2
+2022-01-10 15:25:57.395 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateSwiperTextUsingPOST_1
+2022-01-10 15:25:57.452 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_2
+2022-01-10 15:25:57.499 == vol == [ main ] - [ INFO  ] [ com.example.biologyModel.test.RedisTest : 61 ] - Started RedisTest in 7.625 seconds (JVM running for 9.239)
+2022-01-10 15:26:28.488 == vol == [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2022-01-10 15:26:28.500 == vol == [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2022-01-10 15:27:01.832 == vol == [ main ] - [ INFO  ] [ com.example.biologyModel.test.RedisTest : 55 ] - Starting RedisTest using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 19388 (started by ZWH in C:\Users\ZWH\Desktop\volunteer)
+2022-01-10 15:27:01.834 == vol == [ main ] - [ DEBUG ] [ com.example.biologyModel.test.RedisTest : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-01-10 15:27:01.834 == vol == [ main ] - [ INFO  ] [ com.example.biologyModel.test.RedisTest : 664 ] - The following profiles are active: dev
+2022-01-10 15:27:04.311 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-10 15:27:04.415 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-01-10 15:27:04.702 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-10 15:27:05.216 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-01-10 15:27:05.656 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-01-10 15:27:05.732 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-01-10 15:27:07.652 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-10 15:27:08.088 == vol == [ main ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-01-10 15:27:09.940 == vol == [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-01-10 15:27:09.997 == vol == [ main ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-01-10 15:27:10.058 == vol == [ main ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-01-10 15:27:10.457 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
+2022-01-10 15:27:10.508 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
+2022-01-10 15:27:10.511 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
+2022-01-10 15:27:10.539 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
+2022-01-10 15:27:10.575 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_1
+2022-01-10 15:27:10.583 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addSwiperUsingPOST_1
+2022-01-10 15:27:10.585 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteSwiperByIdUsingPOST_1
+2022-01-10 15:27:10.595 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByNumberUsingGET_1
+2022-01-10 15:27:10.599 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByPriorityUsingGET_1
+2022-01-10 15:27:10.602 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_2
+2022-01-10 15:27:10.606 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateSwiperTextUsingPOST_1
+2022-01-10 15:27:10.693 == vol == [ main ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_2
+2022-01-10 15:27:10.757 == vol == [ main ] - [ INFO  ] [ com.example.biologyModel.test.RedisTest : 61 ] - Started RedisTest in 9.363 seconds (JVM running for 10.972)
+2022-01-10 15:27:41.893 == vol == [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2022-01-10 15:27:41.902 == vol == [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
