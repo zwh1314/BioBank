@@ -1,96 +1,66 @@
-2022-02-05 10:23:53.767 == vol == [ restartedMain ] - [ INFO  ] [ com.example.volunteer.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 9324 (C:\Users\ZWH\Desktop\biologyModel\target\classes started by ZWH in C:\Users\ZWH\Desktop\biologyModel)
-2022-02-05 10:23:53.780 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.volunteer.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
-2022-02-05 10:23:53.781 == vol == [ restartedMain ] - [ INFO  ] [ com.example.volunteer.BiologyModelApplication : 664 ] - The following profiles are active: dev
-2022-02-05 10:24:00.716 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
-2022-02-05 10:24:00.718 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
-2022-02-05 10:24:00.719 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2022-02-05 10:24:01.007 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/volunteer] : 173 ] - Initializing Spring embedded WebApplicationContext
-2022-02-05 10:24:01.870 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-02-05 10:24:02.063 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
-2022-02-05 10:24:02.524 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-02-05 10:24:02.924 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
-2022-02-05 10:24:03.622 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
-2022-02-05 10:24:03.690 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2022-02-05 10:24:06.232 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2022-02-05 10:24:06.593 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-02-05 10:24:08.657 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
-2022-02-05 10:24:08.835 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
-2022-02-05 10:24:08.898 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
-2022-02-05 10:24:09.008 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
-2022-02-05 10:24:09.767 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
-2022-02-05 10:24:09.856 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
-2022-02-05 10:24:09.860 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
-2022-02-05 10:24:09.907 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
-2022-02-05 10:24:09.963 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_1
-2022-02-05 10:24:09.982 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addSwiperUsingPOST_1
-2022-02-05 10:24:09.987 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteSwiperByIdUsingPOST_1
-2022-02-05 10:24:10.003 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByNumberUsingGET_1
-2022-02-05 10:24:10.008 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByPriorityUsingGET_1
-2022-02-05 10:24:10.013 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_2
-2022-02-05 10:24:10.019 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateSwiperTextUsingPOST_1
-2022-02-05 10:24:10.165 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_2
-2022-02-05 10:24:10.327 == vol == [ restartedMain ] - [ INFO  ] [ com.example.volunteer.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 18.098 seconds (JVM running for 21.673)
-2022-02-05 10:33:35.837 == vol == [ restartedMain ] - [ INFO  ] [ com.example.biologyModel.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 18944 (C:\Users\ZWH\Desktop\biologyModel\target\classes started by ZWH in C:\Users\ZWH\Desktop\biologyModel)
-2022-02-05 10:33:35.841 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.biologyModel.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
-2022-02-05 10:33:35.842 == vol == [ restartedMain ] - [ INFO  ] [ com.example.biologyModel.BiologyModelApplication : 664 ] - The following profiles are active: dev
-2022-02-05 10:33:38.555 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
-2022-02-05 10:33:38.556 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
-2022-02-05 10:33:38.556 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2022-02-05 10:33:38.732 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/volunteer] : 173 ] - Initializing Spring embedded WebApplicationContext
-2022-02-05 10:33:39.115 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-02-05 10:33:39.200 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
-2022-02-05 10:33:39.404 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-02-05 10:33:39.574 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
-2022-02-05 10:33:39.799 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
-2022-02-05 10:33:39.837 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2022-02-05 10:33:41.074 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2022-02-05 10:33:41.236 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-02-05 10:33:41.925 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
-2022-02-05 10:33:41.951 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
-2022-02-05 10:33:41.979 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
-2022-02-05 10:33:42.023 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
-2022-02-05 10:33:42.351 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
-2022-02-05 10:33:42.402 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
-2022-02-05 10:33:42.405 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
-2022-02-05 10:33:42.425 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
-2022-02-05 10:33:42.450 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_1
-2022-02-05 10:33:42.454 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addSwiperUsingPOST_1
-2022-02-05 10:33:42.455 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteSwiperByIdUsingPOST_1
-2022-02-05 10:33:42.461 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByNumberUsingGET_1
-2022-02-05 10:33:42.463 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByPriorityUsingGET_1
-2022-02-05 10:33:42.464 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_2
-2022-02-05 10:33:42.465 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateSwiperTextUsingPOST_1
-2022-02-05 10:33:42.530 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_2
-2022-02-05 10:33:42.573 == vol == [ restartedMain ] - [ INFO  ] [ com.example.biologyModel.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 7.675 seconds (JVM running for 9.801)
-2022-02-05 10:53:38.285 == vol == [ restartedMain ] - [ INFO  ] [ com.example.biologyModel.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 9444 (C:\Users\ZWH\Desktop\biologyModel\target\classes started by ZWH in C:\Users\ZWH\Desktop\biologyModel)
-2022-02-05 10:53:38.289 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.biologyModel.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
-2022-02-05 10:53:38.289 == vol == [ restartedMain ] - [ INFO  ] [ com.example.biologyModel.BiologyModelApplication : 664 ] - The following profiles are active: dev
-2022-02-05 10:53:40.472 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
-2022-02-05 10:53:40.473 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
-2022-02-05 10:53:40.473 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2022-02-05 10:53:40.584 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/volunteer] : 173 ] - Initializing Spring embedded WebApplicationContext
-2022-02-05 10:53:40.877 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-02-05 10:53:40.936 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
-2022-02-05 10:53:41.096 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-02-05 10:53:41.243 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
-2022-02-05 10:53:41.402 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
-2022-02-05 10:53:41.424 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2022-02-05 10:53:42.385 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2022-02-05 10:53:42.429 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-02-05 10:53:43.147 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
-2022-02-05 10:53:43.172 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
-2022-02-05 10:53:43.199 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
-2022-02-05 10:53:43.232 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
-2022-02-05 10:53:43.472 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
-2022-02-05 10:53:43.504 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
-2022-02-05 10:53:43.505 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
-2022-02-05 10:53:43.521 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
-2022-02-05 10:53:43.543 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_1
-2022-02-05 10:53:43.547 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addSwiperUsingPOST_1
-2022-02-05 10:53:43.548 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteSwiperByIdUsingPOST_1
-2022-02-05 10:53:43.553 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByNumberUsingGET_1
-2022-02-05 10:53:43.555 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByPriorityUsingGET_1
-2022-02-05 10:53:43.556 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_2
-2022-02-05 10:53:43.558 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateSwiperTextUsingPOST_1
-2022-02-05 10:53:43.611 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_2
-2022-02-05 10:53:43.648 == vol == [ restartedMain ] - [ INFO  ] [ com.example.biologyModel.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 6.014 seconds (JVM running for 7.534)
+2022-02-15 17:43:35.849 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 11872 (C:\Users\ZWH\Desktop\biologyModel\target\classes started by ZWH in C:\Users\ZWH\Desktop\biologyModel)
+2022-02-15 17:43:35.876 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.BioBank.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-02-15 17:43:35.876 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 664 ] - The following profiles are active: dev
+2022-02-15 17:43:40.526 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2022-02-15 17:43:40.527 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-02-15 17:43:40.527 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-02-15 17:43:40.655 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/biology] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-02-15 17:43:41.087 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-15 17:43:41.171 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-02-15 17:43:41.410 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-15 17:43:41.698 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-02-15 17:43:42.137 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-02-15 17:43:42.192 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-02-15 17:43:43.598 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-15 17:43:43.798 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-15 17:43:44.498 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2022-02-15 17:43:44.530 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-02-15 17:43:44.558 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-02-15 17:43:44.593 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-02-15 17:43:44.963 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
+2022-02-15 17:43:45.005 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
+2022-02-15 17:43:45.008 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
+2022-02-15 17:43:45.031 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
+2022-02-15 17:43:45.060 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_1
+2022-02-15 17:43:45.064 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addSwiperUsingPOST_1
+2022-02-15 17:43:45.066 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteSwiperByIdUsingPOST_1
+2022-02-15 17:43:45.074 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByNumberUsingGET_1
+2022-02-15 17:43:45.078 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByPriorityUsingGET_1
+2022-02-15 17:43:45.081 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_2
+2022-02-15 17:43:45.083 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateSwiperTextUsingPOST_1
+2022-02-15 17:43:45.153 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_2
+2022-02-15 17:43:45.213 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 10.717 seconds (JVM running for 14.778)
+2022-02-15 17:43:53.849 == vol == [ http-nio-8080-exec-2 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/biology] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 17:59:21.278 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 22816 (C:\Users\ZWH\Desktop\BioBank\target\classes started by ZWH in C:\Users\ZWH\Desktop\BioBank)
+2022-02-15 17:59:21.285 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.BioBank.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-02-15 17:59:21.286 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 664 ] - The following profiles are active: dev
+2022-02-15 17:59:25.260 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2022-02-15 17:59:25.262 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-02-15 17:59:25.263 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-02-15 17:59:25.471 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-02-15 17:59:26.128 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-15 17:59:26.265 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-02-15 17:59:26.549 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-15 17:59:26.722 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-02-15 17:59:27.033 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-02-15 17:59:27.068 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-02-15 17:59:28.616 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-15 17:59:28.669 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-15 17:59:29.672 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2022-02-15 17:59:29.699 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-02-15 17:59:29.733 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-02-15 17:59:29.784 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-02-15 17:59:30.100 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
+2022-02-15 17:59:30.136 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
+2022-02-15 17:59:30.138 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
+2022-02-15 17:59:30.157 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
+2022-02-15 17:59:30.185 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_1
+2022-02-15 17:59:30.191 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addSwiperUsingPOST_1
+2022-02-15 17:59:30.193 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteSwiperByIdUsingPOST_1
+2022-02-15 17:59:30.200 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByNumberUsingGET_1
+2022-02-15 17:59:30.202 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: getSwiperByPriorityUsingGET_1
+2022-02-15 17:59:30.205 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentLikeNumberUsingPOST_2
+2022-02-15 17:59:30.206 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateSwiperTextUsingPOST_1
+2022-02-15 17:59:30.292 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_2
+2022-02-15 17:59:30.347 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 10.111 seconds (JVM running for 12.338)
+2022-02-15 17:59:36.147 == vol == [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
