@@ -78,8 +78,8 @@ debug：当此属性设置为true时，将打印出logback内部日志信息，�
 		表示当前logger的appender-ref和rootLogger的appender-ref都有效
     -->
     <!-- hibernate logger -->
-    <logger name="com.example.biologyModel" level="debug" ></logger>
-    <logger name="com.example.biologyModel.test" level="debug" ></logger>
+    <logger name="com.example.BioBank" level="debug" ></logger>
+    <logger name="com.example.BioBank.test" level="debug" ></logger>
 
 
     <!-- Spring framework logger -->
