@@ -12,7 +12,7 @@ public class UserDTO {
     private long userId;
 
     @ApiModelProperty(value = "优先级")
-    private String priority;
+    private int priority;
 
     @ApiModelProperty(value = "手机号")
     private String tel;

@@ -15,32 +15,34 @@ public enum ResponseEnum {
     VERIFY_MSG_CODE_VALID(104,"短信验证码已发送，请查收"),
     USER_NOT_FOUND(105, "未找到对应的用户"),
     USERINFO_NOT_FOUND(106,"未找到对应的用户信息"),
-    OBJECT_PUBLISHER_NOT_FOUND(107,"未找到该用户发布的相应信息"),
+    USER_NOT_SIGN_IN(107,"用户未登录"),
+
     OBJECT_RELATIVE_TEXT_NOT_FOUND(108,"未找到相关内容的信息"),
     OBJECT_IN_ONE_WEEK_NOT_FOUND(109,"未找到近一周的信息"),
-    SWIPER_NEWS_NOT_FOUND(110,"未找到该新闻对应的轮播图信息"),
-    SWIPER_PRIORITY_NOT_FOUND(111,"未找到该优先级对应的轮播图信息"),
-    ACTIVITY_NEWS_ACTIVITY_NOT_FOUND(112,"未找到该活动对应的活动新闻信息"),
-    COMMENT_RESPONSE_COMMENT_NOT_FOUND(113,"未找到该普通评论对应的评论回复信息"),
-    COMMENT_RESPONSE_VIDEO_COMMENT_NOT_FOUND(114,"未找到该视频评论对应的评论回复信息"),
+
+    OPERATE_CACHE_FAIL(114,"缓存操作失败"),
     OPERATE_DATABASE_FAIL(115,"数据库操作失败"),
     TEL_HAS_BEEN_USED(116,"该手机号已注册"),
     VERIFY_MSG_CODE_ERROR(117,"验证码错误"),
     USER_ERROR_FREQUENCY_LIMIT(118,"用户尝试次数已达上限，请5分钟后再试"),
     UPLOAD_OSS_FAILURE(119,"文件上传OSS失败"),
-    SIGNED_ACTIVITY_NOT_FOUND(120,"未找到已报名活动"),
-    NO_ACTIVITY_FOCUS(121,"无关注活动"),
+
     INSUFFICIENT_CREDIT(122,"积分不足"),
     NUM_NOT_ENOUGH(123,"库存不足"),
-    OBJECT_NOT_FOUND(124,"商品不存在"),
+    OBJECT_RELATED_NOT_FOUND(124,"相关对象不存在"),
 
-    PURCHASE_ORDER_NOT_FOUND(301, "未找到对应的采购计划"),
+    BIO_MODEL_NOT_ACCESSIBLE(130,"生物样品目前不可以访问"),
+    MODEL_BANK_NOT_ACCESSIBLE(131,"生物样品库目前不可以访问"),
 
-    SERVER_ERROR(500, "服务器内部错误")
-    ;
+    USER_PRIORITY_IS_NOT_ENOUGH(220, "用户的权限不够"),
+    OPERATE_REMOVE_PRIORITY_ONLY_BELONGS_TO_THE_OWNER(221,"对生物样本（库）的移除权限仅属于本样品（库）的拥有者，请重新选择待赋予的权限"),
 
-    private int code;
-    private String msg;
+    BASE_OPERATE_LOG_SEARCH_NOT_FOUND(125,"查找的基本操作日志记录不存在"),
+
+    SERVER_ERROR(500, "服务器内部错误");
+
+    private final int code;
+    private final String msg;
 
     ResponseEnum(int code, String msg) {
         this.code = code;

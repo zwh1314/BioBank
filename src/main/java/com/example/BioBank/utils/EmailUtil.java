@@ -23,12 +23,12 @@ public class EmailUtil {
         Authenticator authenticator = new Authenticator() {
              @Override
              public PasswordAuthentication getPasswordAuthentication() {
-                                 return new PasswordAuthentication("volunteer88888888@163.com","MUVGBZDORXGBWQDZ");
+                                 return new PasswordAuthentication("biobank2022@163.com","WURHWFEBDAAWIJMX");
                              }
          };
 
         try {
-             String from = "volunteer88888888@163.com";
+             String from = "biobank2022@163.com";
             //1 获得连接
             Session session = Session.getDefaultInstance(props, authenticator);
             //2 创建消息
@@ -40,14 +40,14 @@ public class EmailUtil {
             message.addRecipients(MimeMessage.RecipientType.CC, InternetAddress.parse(recipient));
             //message.addHeader("X-Mailer","Microsoft Outlook Express 6.00.2900.2869");
             // 主题（标题）
-            message.setSubject("Registration 志愿帮");
+            message.setSubject("Registration bioBank");
 
 
             //生成6位验证码
             code = RandomStringUtils.randomNumeric(6);
 
             //  正文
-            String str = "【志愿帮】 Your verify code is：" + code + ".This verify code is valid in 5 minutes!";
+            String str = "【bioBank】 Your verify code is：" + code + ", This verify code is valid in 5 minutes!";
             //设置编码，防止发送的内容中文乱码。
             message.setContent(str, "text/html;charset=UTF-8");
             //3 发送消息
@@ -55,7 +55,6 @@ public class EmailUtil {
 
         } catch (MessagingException e) {
             e.printStackTrace();
-
         }
         return code;
     }

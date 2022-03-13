@@ -23,8 +23,8 @@ public class User implements Serializable {
     private String password;
 
     @Column(name = "priority",nullable = false)
-    @ApiModelProperty(value = "优先级")
-    private String priority;
+    @ApiModelProperty(value = "用户权限, -1:无效用户; 0:普通用户; 1:管理员; 2:超级管理员")
+    private int priority;
 
     @Column(name = "tel")
     @ApiModelProperty(value = "手机")

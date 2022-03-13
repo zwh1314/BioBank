@@ -18,25 +18,23 @@ public interface UserInfoDao {
     UserInfoDTO getUserInfoByUserId(@Param("userId") long userId);
 
     @Insert("INSERT INTO user_info(user_name, priority, tel) VALUES(#{userName}, #{priority}, #{tel})")
-    int addUserInfo(UserInfo userInfo);
+    void addUserInfo(UserInfo userInfo);
 
 
     @Update("UPDATE user_info SET user_name = #{userName}, birthday = #{birthday}, major = #{major}, " +
             "gender =#{gender}, address = #{address}, qq = #{qq}, mail_address = #{mailAddress}, introduction = #{introduction} " +
             "WHERE user_id = #{userId}")
-    int updateUserInfo(UserInfo userInfo);
+    void updateUserInfo(UserInfo userInfo);
 
     @Update("UPDATE user_info SET credits = #{credits} WHERE user_id = #{userId}")
     int updateCredits(@Param("userId") long userId, @Param("credits") long credits);
 
     @Update("UPDATE user_info SET priority = #{priority} WHERE user_id = #{userId}")
-    int updatePriority(@Param("userId") long userId, @Param("priority") String priority);
+    void updatePriority(@Param("userId") long userId, @Param("priority") String priority);
 
+    /**todo: convert int to void, bind upload file and update database in one transaction*/
     @Update("UPDATE user_info SET head_picture = #{headPicture} WHERE user_id = #{userId}")
     int updateHeadPicture(@Param("userId") long userId, @Param("headPicture") String headPicture);
-
-    @Delete("DELETE FROM user_info WHERE user_id = #{userId}")
-    int deleteUserInfoByUserId(@Param("userId")long userId);
 
     @ResultType(UserInfoDTO.class)
     @Select("SELECT credits, user_id as userId FROM user_info WHERE user_id = #{userId}")

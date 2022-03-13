@@ -23,7 +23,7 @@ public class RedisTest {
         user.setUserId(1);
         //user.setUserName("张文瀚");
         user.setPassword("991219");
-        user.setPriority("超级管理者");
+        user.setPriority(2);
         user.setTel("15082361803");
         redisUtil.set("zwh",user);
         System.out.println(redisUtil.get("zwh"));
