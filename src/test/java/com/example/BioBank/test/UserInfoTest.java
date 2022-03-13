@@ -37,9 +37,6 @@ public class UserInfoTest {
         userInfo.setCredits(321);
         list.add(userInfo);
         userInfoRequest.setUserInfoList(list);
-        userInfoService.addUserInfo(userInfoRequest);
-        System.out.println(userInfoService.getCreditsByUserId(1L));
-        System.out.println(userInfoService.deleteUserInfoByUserId(1L));
 //        System.out.println(userInfoService.getUserInfoByUserId(1L));
 //        userInfo.setUserId(4L);
 //        userInfoService.updateUserInfo(userInfoRequest);

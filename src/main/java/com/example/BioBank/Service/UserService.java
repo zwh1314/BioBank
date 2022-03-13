@@ -1,7 +1,5 @@
 package com.example.BioBank.Service;
 
-
-import com.example.BioBank.DTO.UserInfoDTO;
 import com.example.BioBank.Response.Response;
 import org.springframework.stereotype.Service;
 
@@ -14,17 +12,17 @@ public interface UserService {
     /**
      * 注册1
      */
-    Response<UserInfoDTO>signUpByTel(String tel, HttpServletRequest servletRequest, HttpServletResponse servletResponse);
+    Response<Boolean>signUpByTel(String tel, HttpServletRequest servletRequest, HttpServletResponse servletResponse);
 
     /**
      * 登录
      */
-    Response<UserInfoDTO> signIn(String tel, String password, HttpServletRequest servletRequest, HttpServletResponse servletResponse);
+    Response<Boolean> signIn(String tel, String password, HttpServletRequest servletRequest, HttpServletResponse servletResponse);
 
     /**
      * 登录3
      */
-    Response<UserInfoDTO> signInByTel(String tel, String verifyCode, HttpServletRequest servletRequest, HttpServletResponse servletResponse);
+    Response<Boolean> signInByTel(String tel, String verifyCode, HttpServletRequest servletRequest, HttpServletResponse servletResponse);
 
     /**
      * 更新密码
@@ -50,7 +48,7 @@ public interface UserService {
     /**
      * 删除用户信息
      */
-    Response<Boolean> deleteUserByUserId(long userId);
+    Response<Boolean> deleteUserByUserId(long userId, long delete_userId);
 
 //    Response<Boolean> updatePasswordByMail(String mail, String oldPassword, String newPassword, String verifyCode);
 //

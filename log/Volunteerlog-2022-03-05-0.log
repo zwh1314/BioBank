@@ -1,0 +1,530 @@
+2022-03-05 11:14:01.916 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 1896 (C:\Users\ZWH\Desktop\BioBank\target\classes started by ZWH in C:\Users\ZWH\Desktop\BioBank)
+2022-03-05 11:14:01.928 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.BioBank.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-03-05 11:14:01.929 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 664 ] - The following profiles are active: dev
+2022-03-05 11:14:05.115 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:14:05.116 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-05 11:14:05.116 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-05 11:14:05.249 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-05 11:14:05.645 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-05 11:14:05.730 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-05 11:14:05.936 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-05 11:14:06.072 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-03-05 11:14:06.350 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-03-05 11:14:06.392 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-03-05 11:14:07.482 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-05 11:14:07.496 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-05 11:14:08.219 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:14:08.242 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-03-05 11:14:08.262 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-03-05 11:14:08.293 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-03-05 11:14:08.511 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
+2022-03-05 11:14:08.541 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
+2022-03-05 11:14:08.543 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
+2022-03-05 11:14:08.563 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
+2022-03-05 11:14:08.621 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 7.537 seconds (JVM running for 9.533)
+2022-03-05 11:14:58.379 == vol == [ http-nio-8080-exec-2 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-05 11:15:50.661 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==>  Preparing: SELECT user_id as userId, user_name as userName, birthday, priority, major, head_picture as headPicture, address, tel, qq, mail_address as mailAddress, gender, introduction, credits FROM user_info WHERE tel = ?
+2022-03-05 11:15:50.704 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==> Parameters: 15082361812(String)
+2022-03-05 11:15:50.723 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - <==      Total: 0
+2022-03-05 11:15:50.728 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.insertUser : 137 ] - ==>  Preparing: INSERT INTO user(password,tel,priority) VALUES (?,?,?);
+2022-03-05 11:15:50.732 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.insertUser : 137 ] - ==> Parameters: null, 15082361812(String), 0(Integer)
+2022-03-05 11:15:50.743 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.insertUser : 137 ] - <==    Updates: 1
+2022-03-05 11:15:50.745 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserInfoDao.addUserInfo : 137 ] - ==>  Preparing: INSERT INTO user_info(user_name, priority, tel) VALUES(?, ?, ?)
+2022-03-05 11:15:50.746 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserInfoDao.addUserInfo : 137 ] - ==> Parameters: 生物样品库工作人员86545(String), 普通用户(String), 15082361812(String)
+2022-03-05 11:15:50.752 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserInfoDao.addUserInfo : 137 ] - <==    Updates: 1
+2022-03-05 11:15:50.769 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==>  Preparing: SELECT user_id as userId, user_name as userName, birthday, priority, major, head_picture as headPicture, address, tel, qq, mail_address as mailAddress, gender, introduction, credits FROM user_info WHERE tel = ?
+2022-03-05 11:15:50.770 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==> Parameters: 15082361812(String)
+2022-03-05 11:15:50.776 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - <==      Total: 1
+2022-03-05 11:16:27.408 == vol == [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.updatePassword : 137 ] - ==>  Preparing: UPDATE user SET password = ? WHERE tel = ?
+2022-03-05 11:16:27.409 == vol == [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.updatePassword : 137 ] - ==> Parameters: zwh991219ww520qh(String), 15082361812(String)
+2022-03-05 11:16:27.421 == vol == [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.updatePassword : 137 ] - <==    Updates: 1
+2022-03-05 11:17:05.105 == vol == [ http-nio-8080-exec-7 ] - [ ERROR ] [ com.example.BioBank.Controller.UserController : 77 ] - [signIn Exception], tel: 15082361812
+java.lang.NullPointerException: null
+	at com.example.BioBank.Service.ServiceImpl.UserServiceImpl.verifyUserByTelAndPassword(UserServiceImpl.java:339)
+	at com.example.BioBank.Service.ServiceImpl.UserServiceImpl.signIn(UserServiceImpl.java:151)
+	at com.example.BioBank.Controller.UserController.signIn(UserController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-03-05 11:19:28.407 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 15436 (C:\Users\ZWH\Desktop\BioBank\target\classes started by ZWH in C:\Users\ZWH\Desktop\BioBank)
+2022-03-05 11:19:28.412 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.BioBank.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-03-05 11:19:28.412 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 664 ] - The following profiles are active: dev
+2022-03-05 11:19:30.431 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:19:30.431 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-05 11:19:30.432 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-05 11:19:30.523 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-05 11:19:30.805 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-05 11:19:30.858 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-05 11:19:30.976 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-05 11:19:31.086 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-03-05 11:19:31.220 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-03-05 11:19:31.241 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-03-05 11:19:32.179 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-05 11:19:32.199 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-05 11:19:32.898 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:19:32.917 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-03-05 11:19:32.934 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-03-05 11:19:32.965 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-03-05 11:19:33.180 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
+2022-03-05 11:19:33.211 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
+2022-03-05 11:19:33.213 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
+2022-03-05 11:19:33.231 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
+2022-03-05 11:19:33.300 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 5.704 seconds (JVM running for 7.8)
+2022-03-05 11:19:37.976 == vol == [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-05 11:19:38.204 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.e.BioBank.Dao.UserDao.getUserByTelAndPassword : 137 ] - ==>  Preparing: SELECT user_id as userId,tel,priority FROM user WHERE tel = ? and password = ?
+2022-03-05 11:19:38.259 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.e.BioBank.Dao.UserDao.getUserByTelAndPassword : 137 ] - ==> Parameters: 15082361812(String), zwh991219ww520qh(String)
+2022-03-05 11:19:38.290 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.e.BioBank.Dao.UserDao.getUserByTelAndPassword : 137 ] - <==      Total: 1
+2022-03-05 11:19:38.311 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==>  Preparing: SELECT user_id as userId, user_name as userName, birthday, priority, major, head_picture as headPicture, address, tel, qq, mail_address as mailAddress, gender, introduction, credits FROM user_info WHERE tel = ?
+2022-03-05 11:19:38.313 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==> Parameters: 15082361812(String)
+2022-03-05 11:19:38.317 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - <==      Total: 1
+2022-03-05 11:20:47.519 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 10400 (C:\Users\ZWH\Desktop\BioBank\target\classes started by ZWH in C:\Users\ZWH\Desktop\BioBank)
+2022-03-05 11:20:47.523 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.BioBank.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-03-05 11:20:47.523 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 664 ] - The following profiles are active: dev
+2022-03-05 11:20:49.604 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:20:49.605 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-05 11:20:49.605 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-05 11:20:49.702 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-05 11:20:50.003 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-05 11:20:50.059 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-05 11:20:50.182 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-05 11:20:50.283 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-03-05 11:20:50.418 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-03-05 11:20:50.439 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-03-05 11:20:51.375 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-05 11:20:51.391 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-05 11:20:52.081 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:20:52.106 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-03-05 11:20:52.124 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-03-05 11:20:52.155 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-03-05 11:20:52.359 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
+2022-03-05 11:20:52.390 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
+2022-03-05 11:20:52.391 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
+2022-03-05 11:20:52.404 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
+2022-03-05 11:20:52.460 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 5.641 seconds (JVM running for 7.627)
+2022-03-05 11:20:59.836 == vol == [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-05 11:20:59.927 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.e.BioBank.Dao.UserDao.getUserByTelAndPassword : 137 ] - ==>  Preparing: SELECT user_id as userId,tel,priority FROM user WHERE tel = ? and password = ?
+2022-03-05 11:20:59.950 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.e.BioBank.Dao.UserDao.getUserByTelAndPassword : 137 ] - ==> Parameters: 15082361812(String), zwh991219ww520qh(String)
+2022-03-05 11:20:59.964 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.e.BioBank.Dao.UserDao.getUserByTelAndPassword : 137 ] - <==      Total: 1
+2022-03-05 11:20:59.973 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==>  Preparing: SELECT user_id as userId, user_name as userName, birthday, priority, major, head_picture as headPicture, address, tel, qq, mail_address as mailAddress, gender, introduction, credits FROM user_info WHERE tel = ?
+2022-03-05 11:20:59.974 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==> Parameters: 15082361812(String)
+2022-03-05 11:20:59.976 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - <==      Total: 1
+2022-03-05 11:21:40.267 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==>  Preparing: SELECT user_id as userId, user_name as userName, birthday, priority, major, head_picture as headPicture, address, tel, qq, mail_address as mailAddress, gender, introduction, credits FROM user_info WHERE tel = ?
+2022-03-05 11:21:40.268 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==> Parameters: 15082361813(String)
+2022-03-05 11:21:40.270 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - <==      Total: 0
+2022-03-05 11:21:40.276 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.insertUser : 137 ] - ==>  Preparing: INSERT INTO user(password,tel,priority) VALUES (?,?,?);
+2022-03-05 11:21:40.278 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.insertUser : 137 ] - ==> Parameters: null, 15082361813(String), 0(Integer)
+2022-03-05 11:21:40.284 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.insertUser : 137 ] - <==    Updates: 1
+2022-03-05 11:21:40.286 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserInfoDao.addUserInfo : 137 ] - ==>  Preparing: INSERT INTO user_info(user_name, priority, tel) VALUES(?, ?, ?)
+2022-03-05 11:21:40.287 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserInfoDao.addUserInfo : 137 ] - ==> Parameters: 生物样品库工作人员79554(String), 普通用户(String), 15082361813(String)
+2022-03-05 11:21:40.292 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserInfoDao.addUserInfo : 137 ] - <==    Updates: 1
+2022-03-05 11:21:40.295 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==>  Preparing: SELECT user_id as userId, user_name as userName, birthday, priority, major, head_picture as headPicture, address, tel, qq, mail_address as mailAddress, gender, introduction, credits FROM user_info WHERE tel = ?
+2022-03-05 11:21:40.296 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==> Parameters: 15082361813(String)
+2022-03-05 11:21:40.299 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - <==      Total: 1
+2022-03-05 11:30:06.542 == vol == [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.getUserByTel : 137 ] - ==>  Preparing: SELECT user_id as userId,tel,priority FROM user WHERE tel = ?
+2022-03-05 11:30:06.544 == vol == [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.getUserByTel : 137 ] - ==> Parameters: 15082361813(String)
+2022-03-05 11:30:06.547 == vol == [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.getUserByTel : 137 ] - <==      Total: 1
+2022-03-05 11:30:06.548 == vol == [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.updatePassword : 137 ] - ==>  Preparing: UPDATE user SET password = ? WHERE tel = ?
+2022-03-05 11:30:06.549 == vol == [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.updatePassword : 137 ] - ==> Parameters: zwh991219ww520qh(String), 15082361813(String)
+2022-03-05 11:30:06.554 == vol == [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.updatePassword : 137 ] - <==    Updates: 1
+2022-03-05 11:30:17.895 == vol == [ http-nio-8080-exec-7 ] - [ DEBUG ] [ c.e.BioBank.Dao.UserDao.getUserByTelAndPassword : 137 ] - ==>  Preparing: SELECT user_id as userId,tel,priority FROM user WHERE tel = ? and password = ?
+2022-03-05 11:30:17.896 == vol == [ http-nio-8080-exec-7 ] - [ DEBUG ] [ c.e.BioBank.Dao.UserDao.getUserByTelAndPassword : 137 ] - ==> Parameters: 15082361813(String), zwh991219ww520qh(String)
+2022-03-05 11:30:17.898 == vol == [ http-nio-8080-exec-7 ] - [ DEBUG ] [ c.e.BioBank.Dao.UserDao.getUserByTelAndPassword : 137 ] - <==      Total: 1
+2022-03-05 11:30:17.900 == vol == [ http-nio-8080-exec-7 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==>  Preparing: SELECT user_id as userId, user_name as userName, birthday, priority, major, head_picture as headPicture, address, tel, qq, mail_address as mailAddress, gender, introduction, credits FROM user_info WHERE tel = ?
+2022-03-05 11:30:17.901 == vol == [ http-nio-8080-exec-7 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==> Parameters: 15082361813(String)
+2022-03-05 11:30:17.903 == vol == [ http-nio-8080-exec-7 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - <==      Total: 1
+2022-03-05 11:32:03.957 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 14268 (C:\Users\ZWH\Desktop\BioBank\target\classes started by ZWH in C:\Users\ZWH\Desktop\BioBank)
+2022-03-05 11:32:03.962 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.BioBank.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-03-05 11:32:03.963 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 664 ] - The following profiles are active: dev
+2022-03-05 11:32:06.735 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:32:06.736 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-05 11:32:06.736 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-05 11:32:06.835 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-05 11:32:07.142 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-05 11:32:07.209 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-05 11:32:07.351 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-05 11:32:07.476 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-03-05 11:32:07.633 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-03-05 11:32:07.660 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-03-05 11:32:08.573 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-05 11:32:08.653 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-05 11:32:09.319 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:32:09.341 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-03-05 11:32:09.363 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-03-05 11:32:09.409 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-03-05 11:32:09.613 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
+2022-03-05 11:32:09.638 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
+2022-03-05 11:32:09.639 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
+2022-03-05 11:32:09.653 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
+2022-03-05 11:32:09.713 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 6.435 seconds (JVM running for 8.504)
+2022-03-05 11:32:24.960 == vol == [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-05 11:32:25.119 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==>  Preparing: SELECT user_id as userId, user_name as userName, birthday, priority, major, head_picture as headPicture, address, tel, qq, mail_address as mailAddress, gender, introduction, credits FROM user_info WHERE tel = ?
+2022-03-05 11:32:25.152 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==> Parameters: 15082361814(String)
+2022-03-05 11:32:25.173 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - <==      Total: 0
+2022-03-05 11:32:25.179 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.insertUser : 137 ] - ==>  Preparing: INSERT INTO user(password,tel,priority) VALUES (?,?,?);
+2022-03-05 11:32:25.184 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.insertUser : 137 ] - ==> Parameters: null, 15082361814(String), 0(Integer)
+2022-03-05 11:32:25.197 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.insertUser : 137 ] - <==    Updates: 1
+2022-03-05 11:32:25.200 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserInfoDao.addUserInfo : 137 ] - ==>  Preparing: INSERT INTO user_info(user_name, priority, tel) VALUES(?, ?, ?)
+2022-03-05 11:32:25.201 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserInfoDao.addUserInfo : 137 ] - ==> Parameters: 生物样品库工作人员10058(String), 普通用户(String), 15082361814(String)
+2022-03-05 11:32:25.207 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserInfoDao.addUserInfo : 137 ] - <==    Updates: 1
+2022-03-05 11:32:25.224 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==>  Preparing: SELECT user_id as userId, user_name as userName, birthday, priority, major, head_picture as headPicture, address, tel, qq, mail_address as mailAddress, gender, introduction, credits FROM user_info WHERE tel = ?
+2022-03-05 11:32:25.225 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==> Parameters: 15082361814(String)
+2022-03-05 11:32:25.233 == vol == [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - <==      Total: 1
+2022-03-05 11:32:38.656 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.updatePassword : 137 ] - ==>  Preparing: UPDATE user SET password = ? WHERE tel = ?
+2022-03-05 11:32:38.658 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.updatePassword : 137 ] - ==> Parameters: zwh991219ww520qh(String), 15082361814(String)
+2022-03-05 11:32:38.665 == vol == [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.updatePassword : 137 ] - <==    Updates: 1
+2022-03-05 11:32:47.589 == vol == [ http-nio-8080-exec-6 ] - [ ERROR ] [ com.example.BioBank.Controller.UserController : 77 ] - [signIn Exception], tel: 15082361814
+java.lang.NullPointerException: null
+	at com.example.BioBank.Service.ServiceImpl.UserServiceImpl.verifyUserByTelAndPassword(UserServiceImpl.java:343)
+	at com.example.BioBank.Service.ServiceImpl.UserServiceImpl.signIn(UserServiceImpl.java:151)
+	at com.example.BioBank.Controller.UserController.signIn(UserController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-03-05 11:33:20.821 == vol == [ http-nio-8080-exec-5 ] - [ ERROR ] [ com.example.BioBank.Controller.UserController : 77 ] - [signIn Exception], tel: 15082361814
+java.lang.NullPointerException: null
+	at com.example.BioBank.Service.ServiceImpl.UserServiceImpl.verifyUserByTelAndPassword(UserServiceImpl.java:343)
+	at com.example.BioBank.Service.ServiceImpl.UserServiceImpl.signIn(UserServiceImpl.java:151)
+	at com.example.BioBank.Controller.UserController.signIn(UserController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-03-05 11:34:22.465 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 6640 (C:\Users\ZWH\Desktop\BioBank\target\classes started by ZWH in C:\Users\ZWH\Desktop\BioBank)
+2022-03-05 11:34:22.470 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.BioBank.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-03-05 11:34:22.470 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 664 ] - The following profiles are active: dev
+2022-03-05 11:34:24.566 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:34:24.567 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-05 11:34:24.567 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-05 11:34:24.672 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-05 11:34:24.953 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-05 11:34:25.005 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-05 11:34:25.135 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-05 11:34:25.245 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-03-05 11:34:25.393 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-03-05 11:34:25.415 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-03-05 11:34:26.297 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-05 11:34:26.319 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-05 11:34:27.007 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:34:27.028 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-03-05 11:34:27.042 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-03-05 11:34:27.069 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-03-05 11:34:27.266 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
+2022-03-05 11:34:27.293 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
+2022-03-05 11:34:27.295 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
+2022-03-05 11:34:27.308 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
+2022-03-05 11:34:27.365 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 5.638 seconds (JVM running for 7.52)
+2022-03-05 11:34:30.727 == vol == [ http-nio-8080-exec-3 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-05 11:34:30.804 == vol == [ http-nio-8080-exec-3 ] - [ DEBUG ] [ c.e.BioBank.Dao.UserDao.getUserByTelAndPassword : 137 ] - ==>  Preparing: SELECT user_id as userId,tel,priority FROM user WHERE tel = ? and password = ?
+2022-03-05 11:34:30.821 == vol == [ http-nio-8080-exec-3 ] - [ DEBUG ] [ c.e.BioBank.Dao.UserDao.getUserByTelAndPassword : 137 ] - ==> Parameters: 15082361814(String), zwh991219ww520qh(String)
+2022-03-05 11:34:30.832 == vol == [ http-nio-8080-exec-3 ] - [ DEBUG ] [ c.e.BioBank.Dao.UserDao.getUserByTelAndPassword : 137 ] - <==      Total: 1
+2022-03-05 11:34:30.841 == vol == [ http-nio-8080-exec-3 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==>  Preparing: SELECT user_id as userId, user_name as userName, birthday, priority, major, head_picture as headPicture, address, tel, qq, mail_address as mailAddress, gender, introduction, credits FROM user_info WHERE tel = ?
+2022-03-05 11:34:30.842 == vol == [ http-nio-8080-exec-3 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==> Parameters: 15082361814(String)
+2022-03-05 11:34:30.843 == vol == [ http-nio-8080-exec-3 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - <==      Total: 1
+2022-03-05 11:35:19.266 == vol == [ http-nio-8080-exec-2 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==>  Preparing: SELECT user_id as userId, user_name as userName, birthday, priority, major, head_picture as headPicture, address, tel, qq, mail_address as mailAddress, gender, introduction, credits FROM user_info WHERE tel = ?
+2022-03-05 11:35:19.267 == vol == [ http-nio-8080-exec-2 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==> Parameters: 15082361815(String)
+2022-03-05 11:35:19.269 == vol == [ http-nio-8080-exec-2 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - <==      Total: 0
+2022-03-05 11:35:19.273 == vol == [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.insertUser : 137 ] - ==>  Preparing: INSERT INTO user(password,tel,priority) VALUES (?,?,?);
+2022-03-05 11:35:19.275 == vol == [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.insertUser : 137 ] - ==> Parameters: null, 15082361815(String), 0(Integer)
+2022-03-05 11:35:19.280 == vol == [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.insertUser : 137 ] - <==    Updates: 1
+2022-03-05 11:35:19.282 == vol == [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserInfoDao.addUserInfo : 137 ] - ==>  Preparing: INSERT INTO user_info(user_name, priority, tel) VALUES(?, ?, ?)
+2022-03-05 11:35:19.283 == vol == [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserInfoDao.addUserInfo : 137 ] - ==> Parameters: 生物样品库工作人员96152(String), 普通用户(String), 15082361815(String)
+2022-03-05 11:35:19.288 == vol == [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserInfoDao.addUserInfo : 137 ] - <==    Updates: 1
+2022-03-05 11:35:19.290 == vol == [ http-nio-8080-exec-2 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==>  Preparing: SELECT user_id as userId, user_name as userName, birthday, priority, major, head_picture as headPicture, address, tel, qq, mail_address as mailAddress, gender, introduction, credits FROM user_info WHERE tel = ?
+2022-03-05 11:35:19.291 == vol == [ http-nio-8080-exec-2 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - ==> Parameters: 15082361815(String)
+2022-03-05 11:35:19.295 == vol == [ http-nio-8080-exec-2 ] - [ DEBUG ] [ c.example.BioBank.Dao.UserInfoDao.getUserInfoByTel : 137 ] - <==      Total: 1
+2022-03-05 11:35:29.005 == vol == [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.updatePassword : 137 ] - ==>  Preparing: UPDATE user SET password = ? WHERE tel = ?
+2022-03-05 11:35:29.007 == vol == [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.updatePassword : 137 ] - ==> Parameters: zwh991219ww520qh(String), 15082361815(String)
+2022-03-05 11:35:29.020 == vol == [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.example.BioBank.Dao.UserDao.updatePassword : 137 ] - <==    Updates: 1
+2022-03-05 11:35:38.449 == vol == [ http-nio-8080-exec-7 ] - [ ERROR ] [ com.example.BioBank.Controller.UserController : 77 ] - [signIn Exception], tel: 15082361815
+java.lang.NullPointerException: null
+	at com.example.BioBank.Service.ServiceImpl.UserServiceImpl.verifyUserByTelAndPassword(UserServiceImpl.java:345)
+	at com.example.BioBank.Service.ServiceImpl.UserServiceImpl.signIn(UserServiceImpl.java:151)
+	at com.example.BioBank.Controller.UserController.signIn(UserController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-03-05 11:37:18.614 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 11416 (C:\Users\ZWH\Desktop\BioBank\target\classes started by ZWH in C:\Users\ZWH\Desktop\BioBank)
+2022-03-05 11:37:18.619 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.BioBank.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-03-05 11:37:18.619 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 664 ] - The following profiles are active: dev
+2022-03-05 11:37:20.914 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:37:20.915 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-05 11:37:20.915 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-05 11:37:21.018 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-05 11:37:21.304 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-05 11:37:21.370 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-05 11:37:21.522 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-05 11:37:21.658 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-03-05 11:37:21.797 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-03-05 11:37:21.818 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-03-05 11:37:23.080 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-05 11:37:23.104 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-05 11:37:23.850 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:37:23.874 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-03-05 11:37:23.893 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-03-05 11:37:23.919 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-03-05 11:37:24.109 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
+2022-03-05 11:37:24.135 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
+2022-03-05 11:37:24.137 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
+2022-03-05 11:37:24.150 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
+2022-03-05 11:37:24.204 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 6.244 seconds (JVM running for 8.266)
+2022-03-05 11:37:58.104 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 14328 (C:\Users\ZWH\Desktop\BioBank\target\classes started by ZWH in C:\Users\ZWH\Desktop\BioBank)
+2022-03-05 11:37:58.109 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.BioBank.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-03-05 11:37:58.109 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 664 ] - The following profiles are active: dev
+2022-03-05 11:38:00.348 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:38:00.349 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-05 11:38:00.350 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-05 11:38:00.470 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-05 11:38:00.853 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-05 11:38:00.906 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-05 11:38:01.034 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-05 11:38:01.140 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-03-05 11:38:01.276 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-03-05 11:38:01.298 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-03-05 11:38:02.179 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-05 11:38:02.180 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-05 11:38:02.849 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:38:02.873 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-03-05 11:38:02.894 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-03-05 11:38:02.924 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-03-05 11:38:03.140 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
+2022-03-05 11:38:03.170 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
+2022-03-05 11:38:03.171 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
+2022-03-05 11:38:03.188 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
+2022-03-05 11:38:03.249 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 5.807 seconds (JVM running for 7.59)
+2022-03-05 11:38:29.928 == vol == [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-05 11:58:05.059 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 10040 (C:\Users\ZWH\Desktop\BioBank\target\classes started by ZWH in C:\Users\ZWH\Desktop\BioBank)
+2022-03-05 11:58:05.065 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.BioBank.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-03-05 11:58:05.065 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 664 ] - The following profiles are active: dev
+2022-03-05 11:58:07.428 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:58:07.430 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-05 11:58:07.431 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-05 11:58:07.569 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-05 11:58:07.886 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-05 11:58:07.958 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-05 11:58:08.179 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-05 11:58:08.336 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-03-05 11:58:08.599 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-03-05 11:58:08.635 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-03-05 11:58:09.611 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-05 11:58:09.687 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-05 11:58:10.455 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-05 11:58:10.477 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-03-05 11:58:10.498 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-03-05 11:58:10.528 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-03-05 11:58:10.748 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
+2022-03-05 11:58:10.779 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
+2022-03-05 11:58:10.781 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
+2022-03-05 11:58:10.803 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
+2022-03-05 11:58:10.879 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 6.538 seconds (JVM running for 8.546)
+2022-03-05 12:07:11.114 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 18212 (C:\Users\ZWH\Desktop\BioBank\target\classes started by ZWH in C:\Users\ZWH\Desktop\BioBank)
+2022-03-05 12:07:11.117 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.BioBank.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-03-05 12:07:11.117 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 664 ] - The following profiles are active: dev
+2022-03-05 12:07:13.196 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-05 12:07:13.197 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-05 12:07:13.197 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-05 12:07:13.291 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-05 12:07:13.550 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-05 12:07:13.600 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-05 12:07:13.726 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-05 12:07:13.824 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-03-05 12:07:13.958 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-03-05 12:07:13.977 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-03-05 12:07:15.005 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-05 12:07:15.045 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-05 12:07:15.724 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-05 12:07:15.744 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-03-05 12:07:15.759 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-03-05 12:07:15.792 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-03-05 12:07:15.975 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_1
+2022-03-05 12:07:16.001 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: addCommentUsingPOST_1
+2022-03-05 12:07:16.002 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: deleteActivityNewsByNewsIdUsingPOST_2
+2022-03-05 12:07:16.015 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.r.operation.CachingOperationNameGenerator : 40 ] - Generating unique operation named: updateCommentTextUsingPOST_1
+2022-03-05 12:07:16.076 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 5.661 seconds (JVM running for 7.498)
+2022-03-05 12:07:21.621 == vol == [ http-nio-8080-exec-3 ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'

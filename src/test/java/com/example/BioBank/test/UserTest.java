@@ -22,7 +22,7 @@ public class UserTest {
         //user1.setUserName("张文瀚");
         user1.setPassword("991219");
         user1.setTel("15082361803");
-        user1.setPriority("管理员");
+        user1.setPriority(1);
         userDao.insertUser(user1);
         UserDTO userDTO=userDao.getUserByTel(user1.getTel());
         System.out.println(userDao.getUserByTel(user1.getTel()));

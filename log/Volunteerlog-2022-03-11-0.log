@@ -1,0 +1,40 @@
+2022-03-11 13:27:30.102 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 588 (C:\Users\ZWH\Desktop\BioBank\target\classes started by ZWH in C:\Users\ZWH\Desktop\BioBank)
+2022-03-11 13:27:30.107 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.BioBank.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-03-11 13:27:30.108 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 664 ] - The following profiles are active: dev
+2022-03-11 13:27:32.012 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-11 13:27:32.013 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-11 13:27:32.013 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-11 13:27:32.092 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-11 13:27:32.307 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-11 13:27:32.358 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-11 13:27:32.498 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-11 13:27:32.598 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-03-11 13:27:32.789 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-03-11 13:27:32.807 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-03-11 13:27:33.571 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-11 13:27:33.660 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-11 13:27:34.119 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-11 13:27:34.136 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-03-11 13:27:34.151 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-03-11 13:27:34.176 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-03-11 13:27:34.361 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 4.75 seconds (JVM running for 6.399)
+2022-03-11 13:34:47.190 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 55 ] - Starting BiologyModelApplication using Java 1.8.0_281 on LAPTOP-F7V96UK6 with PID 2572 (C:\Users\ZWH\Desktop\BioBank\target\classes started by ZWH in C:\Users\ZWH\Desktop\BioBank)
+2022-03-11 13:34:47.193 == vol == [ restartedMain ] - [ DEBUG ] [ com.example.BioBank.BiologyModelApplication : 56 ] - Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-03-11 13:34:47.193 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 664 ] - The following profiles are active: dev
+2022-03-11 13:34:48.650 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-11 13:34:48.650 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2022-03-11 13:34:48.651 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-11 13:34:48.724 == vol == [ restartedMain ] - [ INFO  ] [ o.a.c.c.C.[Tomcat].[localhost].[/BioBank] : 173 ] - Initializing Spring embedded WebApplicationContext
+2022-03-11 13:34:48.920 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-11 13:34:48.957 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-03-11 13:34:49.049 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-11 13:34:49.136 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2022-03-11 13:34:49.238 == vol == [ task-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2022-03-11 13:34:49.253 == vol == [ task-1 ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 170 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-03-11 13:34:49.800 == vol == [ task-1 ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-11 13:34:49.808 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.w.PropertySourcedRequestMappingHandlerMapping : 69 ] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-11 13:34:50.302 == vol == [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-11 13:34:50.320 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 151 ] - Context refreshed
+2022-03-11 13:34:50.333 == vol == [ restartedMain ] - [ INFO  ] [ s.d.s.web.plugins.DocumentationPluginsBootstrapper : 154 ] - Found 1 custom documentation plugin(s)
+2022-03-11 13:34:50.356 == vol == [ restartedMain ] - [ INFO  ] [ s.d.spring.web.scanners.ApiListingReferenceScanner : 41 ] - Scanning for api listing references
+2022-03-11 13:34:50.603 == vol == [ restartedMain ] - [ INFO  ] [ com.example.BioBank.BiologyModelApplication : 61 ] - Started BiologyModelApplication in 3.894 seconds (JVM running for 5.1)

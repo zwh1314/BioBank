@@ -16,16 +16,7 @@ public class ScheduledTasks {
     UserInfoDao userInfoDao;
 
     @Autowired
-    CommentDao commentDao;
-
-    @Autowired
-    CommentResponseDao commentResponseDao;
-
-    @Autowired
-    VideoCommentDao videoCommentDao;
-
-    @Autowired
-    VideoDao videoDao;
+    OperateLogDao operateLogDao;
 
     private static final Logger logger = LoggerFactory.getLogger(ScheduledTasks.class);
 

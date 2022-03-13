@@ -11,7 +11,6 @@ import java.util.Date;
 @Entity(name = "user_info")
 public class UserInfo implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
     @ApiModelProperty(value = "用户id")
     private long userId;

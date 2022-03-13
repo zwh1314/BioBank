@@ -24,11 +24,12 @@ public class Response<T> {
     @ApiModelProperty("返回数据格式")
     private T result;
 
-    public void setSuc(T data) {
+    public Response<Boolean> setSuc(T data) {
         setSuccess(true);
         setCode(ResponseEnum.SUCCESS.getCode());
         setMsg(ResponseEnum.SUCCESS.getMsg());
         setResult(data);
+        return null;
     }
 
     public void setFail(String msg) {

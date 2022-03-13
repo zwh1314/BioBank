@@ -1,6 +1,8 @@
 package com.example.BioBank.Controller;
 
+import com.example.BioBank.Exception.BioBankRuntimeException;
 import com.example.BioBank.aspect.TokenAspect;
+import com.example.BioBank.enums.ResponseEnum;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
 import org.apache.commons.lang3.math.NumberUtils;
@@ -20,6 +22,9 @@ public class BaseController {
 
     protected Long getUserId() {
         Long userId = tokenAspect.getVerifyToken();
+        if(userId == null){
+            throw new BioBankRuntimeException(ResponseEnum.USER_NOT_SIGN_IN);
+        }
         validateUserId(userId);
         return userId;
     }
